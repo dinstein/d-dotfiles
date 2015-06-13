@@ -106,5 +106,6 @@ if brew list | grep coreutils > /dev/null ; then
   eval `gdircolors -b $HOME/.dir_colors`
 fi
 
-alias vim="/usr/local/Cellar/vim/7.4.488/bin/vim"
+alias ssh02="ssh dinstein@ssh02.dinstein.net"
+alias sshthuee="ssh dinstein@thuee.net -p 24"
 
