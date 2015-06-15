@@ -99,7 +99,6 @@ alias -s bz2='tar -xjvf'
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
-
 if brew list | grep coreutils > /dev/null ; then
   PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
   alias ls='ls -F --show-control-chars --color=auto'
