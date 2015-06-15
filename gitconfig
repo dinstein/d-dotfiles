@@ -11,3 +11,5 @@
 	tool = opendiff
 [push]
 	default = matching
+[core]
+    editor = vim
