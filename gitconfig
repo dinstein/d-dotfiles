@@ -3,6 +3,7 @@
 	br = branch
 	ci = commit
 	st = status
+    re = remote
 	last = log -1 HEAD
 [user]
 	name = dinstein
