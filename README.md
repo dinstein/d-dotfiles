@@ -2,7 +2,7 @@
 
 dotfiles for dinstein
 
-# INSTALL
+## INSTALL
 
 chmod a+x install.sh
 
