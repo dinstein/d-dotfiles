@@ -6,13 +6,13 @@ PWD=$(pwd $0)
 
 # Install DOTFILES
 for file in ${DOTFILES[*]}; do
-    echo "Install" $file
+    echo "Install $file"
     CONFIG_FILE="$HOME/.$file"
     if [ -f $CONFIG_FILE ]; then
         rm $CONFIG_FILE
     fi
-    ln -s "$PWD"/"$file" $CONFIG_FILE
-    echo "ln -s" $PWD"/"$file $CONFIG_FILE
+    ln -s "$PWD"/"$file" "$CONFIG_FILE"
+    echo "ln -s $PWD/$file $CONFIG_FILE"
 done
 
 
@@ -23,5 +23,5 @@ if [ -f $ZSH_CONFIG ];then
     rm $ZSH_CONFIG
 fi
 ln -s "$PWD/dinstein.zsh" "$ZSH_CONFIG"
-echo "ln -s" $PWD"/dinstein.zsh" $ZSH_CONFIG
+echo "ln -s $PWD/dinstein.zsh $ZSH_CONFIG"
 
